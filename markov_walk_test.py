@@ -4,7 +4,7 @@ from markov_walk_solution import State, simulate_temperature
 ###########
 #  TESTS   
 ###########
-def test_state_transition(): # 1p
+def test_state_transition(): # 2p
    """ Simple state transition test """
 
    state_1 = State("A")
@@ -58,10 +58,16 @@ def test_multiple_transitions(): # 1p
     assert current_state == state_5
 
 
-def test_simulate_temperature(): # 5p
+def test_simulate_temperature(): # 3p
     """ Run simulation and check that probabilities are within reasonable range """
     prob = simulate_temperature(1000,10)
     assert prob['Cold'] == pytest.approx(20.0,abs=7.0)
     assert prob['Normal'] == pytest.approx(50.0,abs=10.0)
     assert prob['Hot'] == pytest.approx(5.0,abs=5.0)
     assert prob['Overheating'] == pytest.approx(25.0,abs=10.0)
+
+
+def test_simulate_temperature_final_state(): # 2p
+    """ Run simulation for many transitions - converges towards overheating """
+    prob = simulate_temperature(1000,200)
+    assert prob['Overheating'] > 99.0
