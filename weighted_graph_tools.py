@@ -146,24 +146,3 @@ def plot_node_circles(nodes, circle_size=400, edgecolors='black',linestyle='-'):
     y = [yi for (yi,_) in nodes]
     plt.scatter(x, y, s=circle_size, facecolors='none', edgecolors=edgecolors,
                 linestyle=linestyle)
-
-
-# def path_backtrack(start_node,end_node,came_from):
-#     """ Construct path from start to end node based on previous traversal 
-    
-#     # Arguments:
-#     start_node:     start node (unique identifier)
-#     end_node:       end node (unique identifier)
-#     came_from:      Dict from previous traversal
-#                     key = node, value = previous node
-
-#     # Returns:
-#     path:           List, starting with start_node and ending with end_node,
-#                     containing all nodes on the path taken from start to end     
-#     """
-#     path = [end_node]
-#     current_node = end_node
-#     while current_node in came_from:
-#         path.insert(0,came_from[current_node])
-#         current_node = came_from[current_node]
-#     return path
