@@ -1,5 +1,5 @@
 import pytest
-from markov_walk_solution import State, simulate_temperature
+from markov_walk import State, simulate_temperature
 
 ###########
 #  TESTS   

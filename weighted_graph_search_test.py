@@ -1,4 +1,4 @@
-import weighted_graph_search_solution as wgs
+import weighted_graph_search as wgs
 import weighted_graph_tools as wgt
 import pytest
 
