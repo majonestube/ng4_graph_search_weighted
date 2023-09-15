@@ -1,0 +1,204 @@
+{
+  "tests": [
+    {
+      "name": "test_path_backtrack",
+      "setup": "sudo -H pip3 install pytest heapdict matplotlib==3.7.2 numpy==1.25.2",
+      "run": "pytest weighted_graph_search_test.py::test_path_backtrack",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_dijkstra_traverse_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_dijkstra_traverse_1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_dijkstra_traverse_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_dijkstra_traverse_2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+	{
+      "name": "test_djikstra_traverse_3",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_djikstra_traverse_3",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_dijkstra_search_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_dijkstra_search_1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_dijkstra_search_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_dijkstra_search_2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_distance_L1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_distance_L1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_greedy_search_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_greedy_search_1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_greedy_search_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_greedy_search_2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_astar_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_astar_1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_astar_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_astar_2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_astar_3",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_astar_3",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_bellman_ford_1",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_bellman_ford_1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_bellman_ford_2",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_bellman_ford_2",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_bellman_ford_3",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest weighted_graph_search_test.py::test_bellman_ford_3",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_state_transition",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest markov_walk_test.py::test_state_transition",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test_two_state_transition",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest markov_walk_test.py::test_two_state_transition",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_multiple_transitions",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest markov_walk_test.py::test_multiple_transitions",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_simulate_temperature",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest markov_walk_test.py::test_simulate_temperature",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "test_simulate_temperature_final_state",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest markov_walk_test.py::test_simulate_temperature_final_state",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
