@@ -63,10 +63,13 @@ def dijkstra_search(graph, start_node, end_node):
         
     # Returns:
     dist:       Distance / cost from start node to end node (single value).
-    path:       ist containing every node along shortest path 
-                from start to end node (including both).
+    came_from:  Dict containing the preceding node ("came_from") along the 
+                shortest path to the node from start, for every node.
+                The dict includes the start node, came_from[start_node] == None. 
     visited:    List containing nodes visited during search, ordered from first
                 (start_node) to last (end_node).
+    path:       ist containing every node along shortest path 
+                from start to end node (including both).
     """
     pass
 
@@ -104,10 +107,13 @@ def greedy_search(graph, start_node, end_node):
     # Returns:
     dist:       Distance / cost from start node to end node (single value)
                 along path followed (not necessarily shortest path).
-    path:       List containing every node along path followed 
-                from start to end node (including both).
+    came_from:  Dict containing the preceding node ("came_from") along the 
+                shortest path to the node from start, for every node.
+                The dict includes the start node, came_from[start_node] == None. 
     visited:    List containing nodes visited during search, ordered from first
                 (start_node) to last (end_node).
+    path:       List containing every node along path followed 
+                from start to end node (including both).
     """
     pass
 
@@ -135,7 +141,12 @@ def astar(graph,start_node,end_node):
         
     # Returns:
     dist:       Distance / cost from start node to end node (single value).
-    path:       List containing every node along shortest path 
+    came_from:  Dict containing the preceding node ("came_from") along the 
+                shortest path to the node from start, for every node.
+                The dict includes the start node, came_from[start_node] == None. 
+    visited:    List containing nodes visited during search, ordered from first
+                (start_node) to last (end_node).
+    path:       List containing every node along path followed 
                 from start to end node (including both).
     """
     pass
